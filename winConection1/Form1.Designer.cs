@@ -33,13 +33,15 @@
             this.lblConn = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnCantidad = new System.Windows.Forms.Button();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnEjecutar
             // 
             this.btnEjecutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEjecutar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnEjecutar.Location = new System.Drawing.Point(340, 125);
+            this.btnEjecutar.Location = new System.Drawing.Point(401, 125);
             this.btnEjecutar.Name = "btnEjecutar";
             this.btnEjecutar.Size = new System.Drawing.Size(111, 54);
             this.btnEjecutar.TabIndex = 0;
@@ -55,7 +57,7 @@
             this.lstConexion.ItemHeight = 16;
             this.lstConexion.Location = new System.Drawing.Point(32, 54);
             this.lstConexion.Name = "lstConexion";
-            this.lstConexion.Size = new System.Drawing.Size(208, 308);
+            this.lstConexion.Size = new System.Drawing.Size(325, 308);
             this.lstConexion.TabIndex = 1;
             // 
             // lblConn
@@ -91,11 +93,32 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnCantidad
+            // 
+            this.btnCantidad.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCantidad.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCantidad.Location = new System.Drawing.Point(363, 231);
+            this.btnCantidad.Name = "btnCantidad";
+            this.btnCantidad.Size = new System.Drawing.Size(75, 23);
+            this.btnCantidad.TabIndex = 5;
+            this.btnCantidad.Text = "Cantidad";
+            this.btnCantidad.UseVisualStyleBackColor = false;
+            this.btnCantidad.Click += new System.EventHandler(this.btnCantidad_Click);
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(444, 234);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(180, 20);
+            this.txtCantidad.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 395);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.btnCantidad);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblConn);
@@ -115,6 +138,8 @@
         private System.Windows.Forms.Label lblConn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnCantidad;
+        private System.Windows.Forms.TextBox txtCantidad;
     }
 }
 
